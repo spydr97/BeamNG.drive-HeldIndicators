@@ -1,0 +1,32 @@
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package mod
+        run: |
+          mkdir -p dist
+          cd mod && zip -r ../dist/held_indicators.zip .
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: held_indicators
+          path: dist/held_indicators.zip
+
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/held_indicators.zip
+          generate_release_notes: true
