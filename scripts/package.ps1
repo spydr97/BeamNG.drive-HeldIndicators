@@ -1,8 +1,8 @@
-# Zips the mod folder into dist/held_indicators.zip, its contents at the zip's root (as BeamNG expects).
+# Zips the mod folder into dist/stalk_bindings.zip, its contents at the zip's root (as BeamNG expects).
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 $dist = Join-Path $root 'dist'
-$zip = Join-Path $dist 'held_indicators.zip'
+$zip = Join-Path $dist 'stalk_bindings.zip'
 
 New-Item -ItemType Directory -Force $dist | Out-Null
 Remove-Item $zip -ErrorAction SilentlyContinue

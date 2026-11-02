@@ -1,0 +1,5 @@
+{
+  "bindings": [
+    { "control": "button5", "action": "stalkBindings_highbeam_flash" }
+  ]
+}

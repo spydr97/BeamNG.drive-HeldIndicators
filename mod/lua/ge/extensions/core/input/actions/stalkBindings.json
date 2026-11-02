@@ -1,0 +1,145 @@
+{
+  "stalkBindings_left_signal_hold": {
+    "cat": "vehicle",
+    "order": 26.1,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').indicators.on('left')",
+    "onUp": "extensions.use('stalkBindings').indicators.off('left')",
+    "title": "Stalk: Left signal (held)",
+    "desc": "On while the button is held, off when it's released; a quick flick flashes 3 times. For indicator stalks that latch."
+  },
+  "stalkBindings_right_signal_hold": {
+    "cat": "vehicle",
+    "order": 26.11,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').indicators.on('right')",
+    "onUp": "extensions.use('stalkBindings').indicators.off('right')",
+    "title": "Stalk: Right signal (held)",
+    "desc": "On while the button is held, off when it's released; a quick flick flashes 3 times. For indicator stalks that latch."
+  },
+  "stalkBindings_signal_cancel": {
+    "cat": "vehicle",
+    "order": 26.12,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').indicators.cancel()",
+    "title": "Stalk: Signal cancel",
+    "desc": "The indicator stalk's middle position: stops the indicator (or finishes a flick's 3 flashes)."
+  },
+  "stalkBindings_lights_off": {
+    "cat": "vehicle",
+    "order": 26.13,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.off()",
+    "title": "Stalk: Lights off",
+    "desc": "Turns the lights off."
+  },
+  "stalkBindings_lights_on": {
+    "cat": "vehicle",
+    "order": 26.14,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.on()",
+    "title": "Stalk: Lights on",
+    "desc": "Turns the lights on (low beam, or high beam with the stalk pushed)."
+  },
+  "stalkBindings_lights_toggle": {
+    "cat": "vehicle",
+    "order": 26.15,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.toggle()",
+    "title": "Stalk: Lights toggle",
+    "desc": "Turns the lights on or off."
+  },
+  "stalkBindings_highbeam_hold": {
+    "cat": "vehicle",
+    "order": 26.16,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.highBeam(true)",
+    "onUp": "extensions.use('stalkBindings').lights.highBeam(false)",
+    "title": "Stalk: High beam (held)",
+    "desc": "High beam while the button is held, with the lights on."
+  },
+  "stalkBindings_highbeam_on": {
+    "cat": "vehicle",
+    "order": 26.17,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.highBeam(true)",
+    "title": "Stalk: High beam on",
+    "desc": "Stalk pushed to high beam: lit while the lights are on."
+  },
+  "stalkBindings_highbeam_off": {
+    "cat": "vehicle",
+    "order": 26.18,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.highBeam(false)",
+    "title": "Stalk: High beam off",
+    "desc": "Stalk back from high beam."
+  },
+  "stalkBindings_highbeam_toggle": {
+    "cat": "vehicle",
+    "order": 26.19,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.highBeamToggle()",
+    "title": "Stalk: High beam toggle",
+    "desc": "Switches the high beam on or off, with the lights on."
+  },
+  "stalkBindings_highbeam_flash": {
+    "cat": "vehicle",
+    "order": 26.2,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.flash(true)",
+    "onUp": "extensions.use('stalkBindings').lights.flash(false)",
+    "title": "Stalk: High beam flash",
+    "desc": "High beam while held, lights on or off."
+  },
+  "stalkBindings_fog_hold": {
+    "cat": "vehicle",
+    "order": 26.21,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.fog(true)",
+    "onUp": "extensions.use('stalkBindings').lights.fog(false)",
+    "title": "Stalk: Fog lights (held)",
+    "desc": "Fog lights while the button is held."
+  },
+  "stalkBindings_fog_toggle": {
+    "cat": "vehicle",
+    "order": 26.22,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').lights.fogToggle()",
+    "title": "Stalk: Fog lights toggle",
+    "desc": "Switches the fog lights on or off."
+  },
+  "stalkBindings_cc_onoff": {
+    "cat": "vehicle",
+    "order": 26.23,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').cruise.onOff()",
+    "title": "Stalk: Cruise on / off",
+    "desc": "Holds the current speed, or switches cruise control off and forgets the set speed."
+  },
+  "stalkBindings_cc_resume_up": {
+    "cat": "vehicle",
+    "order": 26.24,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').cruise.resumeOrUp()",
+    "onUp": "extensions.use('stalkBindings').cruise.release()",
+    "title": "Stalk: Cruise resume / +",
+    "desc": "Resumes the set speed, or raises it: a tap by 1, held on to the next 5."
+  },
+  "stalkBindings_cc_set_down": {
+    "cat": "vehicle",
+    "order": 26.25,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').cruise.setOrDown()",
+    "onUp": "extensions.use('stalkBindings').cruise.release()",
+    "title": "Stalk: Cruise set / -",
+    "desc": "Holds the current speed, or lowers it: a tap by 1, held on to the next 5."
+  },
+  "stalkBindings_cc_cancel": {
+    "cat": "vehicle",
+    "order": 26.26,
+    "ctx": "vlua",
+    "onDown": "extensions.use('stalkBindings').cruise.cancel()",
+    "title": "Stalk: Cruise cancel",
+    "desc": "Pauses cruise control, keeping the set speed to resume."
+  }
+}
